@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type=text/css>   
+	<title>Health Care</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS styles -->
+	<style>
+	   
+			    body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #000;
+			color: white;
+			padding: 0px;
+		}
+		h1 {
+			margin: 0;
+		} 
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serief';
+}
+.navbar{
+    position: absolute;
+    left: 0;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background:#000;
+
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.nav-link li{
+    margin: 0 30px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.dropdown_menu{
+    display: none;
+}
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.dropdown_menu ul{
+    display: block;
+    margin:10px;
+   
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    background:rgb(110, 110, 114);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top o.5s, opacity 0.5s ;
+  }
+  .nav-link li a:hover{
+    color : #fc036b;
+  }
+  .nav-link li:hover::after{
+    top: 50%;
+    opacity: 1
+  }
+		
+		img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
+
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		h3{
+		    colour:#ff40a8
+		    
+		}
+		h2 {
+			color: #0072c6;
+		}
+		p {
+			line-height: 1.5;
+		}
+		footer {
+			background-color: #f2f2f2;
+			padding: 10px;
+			text-align: center;
+			font-size: 12px;
+		}
+	</style>
+</head>
+
+<nav class="navbar">
+  <h1 class="logo">WHeroes</h1>
+  <ul class="nav-link">
+      <li><a href="homepage.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="afteradminlogin.php">COMPLAINT</a></li>
+      <li><a href="#Many More">MANY MORE <i class = "fas fa-caret-down"></i> </a>
+          <div class="dropdown_menu">
+              <ul class="nav-link">
+                  <li><a href="news&event.html">News & Events</a></li>
+                  <li><a href="publication.html">Publications</a></li>
+                  <li><a href="principles.html">Principles</a></li>
+                  <li><a href="acts&lows.html">Acts</a></li>
+                  <li><a href="Healthcare.html">Health Care</a></li>
+              
+              </ul>   
+          </div> 
+</li>
+</ul>
+</nav>
+<body>
+		<div class="container">
+			<h1>Welcome to Health Care</h1>
+		</div>
+ 
+<br>
+	<div class="container">
+		<h2>Women Health Care knowledge</h2>
+		<p>Women's healthcare refers to medical care that is focused on the specific health needs of women. It covers a wide range of health issues that affect women throughout their lives, from puberty to menopause and beyond.
+</p>
+<br>
+<h2>Here are some key areas of women's healthcare:
+</h2>
+</br>
+		<h2>Reproductive Health:</h2>
+		<p> This includes care related to pregnancy, childbirth, and fertility. It also includes family planning, contraception, and menopause.</p> 
+		
+		<h2>Breast health:</h2>
+		<p> Breast cancer is a common health issue among women, and regular breast exams and mammograms are important for early detection and treatment.
+
+</p>
+		
+		<h2>Cardiovascular health:</h2>
+		<p> Heart disease is the leading cause of death for women in many countries. Women's healthcare should include regular monitoring of blood pressure, cholesterol levels, and other risk factors for heart disease.</p> 
+		
+		<h2>Mental health:</h2>
+		<p> Women are at a higher risk for certain mental health conditions, such as depression and anxiety. Women's healthcare should include screening for these conditions and appropriate treatment.
+</p> 
+		
+		<h2>Bone health:</h2>
+		<p> Osteoporosis is a common condition among women, especially after menopause. Women's healthcare should include screening for osteoporosis and recommendations for maintaining bone health.</p> 
+		
+		<h2>Sexual health:</h2>
+		<p> Women's healthcare should include access to contraception, STI testing and treatment, and support for sexual and reproductive health.
+
+</p> 
+		
+		<h2>Cancer screenings:</h2>
+		<p> Women's healthcare should include regular screenings for cervical, breast, and colorectal cancer, as well as other types of cancer that may be more common in women
+.</p> 
+		
+	</div>
+</br>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>TASK 2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ * {
+ box-sizing: border-box;
+ ;
+
+ }
+
+ .aside2 {
+ width: 48%;
+ height: 30vh;
+ padding-right: 15px;
+ margin-left: 15px;
+ float: left;
+ 
+ }
+.demo {
+   filter: brightness(120%);
+   filter: contrast(120%);
+   filter: drop-shadow(10px 10px 10px black);
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+}
+
+	
+	
+* {
+  box-sizing: border-box;
+}
+
+.footer-information {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 120%;
+   height:30%;
+   background-color: black;
+   color: white;
+}
+
+.footer-element {
+  float: left;
+  width: auto;
+  padding: 10px;
+  height: 200px;
+
+}
+.footer-elements:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ </style>
+</head>
+
+ 
+
+<body>
+  <div class="footer-information">
+    <div class="footer-elements">
+      <div class="footer-element" style="padding-left: 30px;">
+        <h3>WHeroes  </h3>
+      <br>
+      <p class="footer-links">
+      <a href="#">Home</a> | <a href="#">About us</a>|<a href="#">Contact us</a>
+      </p>
+      <br>
+      <p>
+      ©Dr.Panjabrao Deshmukh Polytechnic, Amravati 
+      </p>
+    </div>
+      <div class="footer-element">
+      <p><h3><u><i class="fa fa-map-marker fa-spin"></i> &nbsp : &nbsp Shivaji Nagar, Amravati, Maharashtra 444603 </p></h3></u>
+      <p><h3><u><i class="fa fa-phone fa-spin"></i> :&nbsp 103, 1091 </p></h3></u>
+      <p><h3><u><i class="fa fa-envelope fa-spin"></i> &nbsp support :&nbsp 
+      <a href="mailto:Wempowerment03@gmail.com">support@womenempowerment.com</a></p></h3></u>
+      <p><i class="fa fa-twitter" style="font-size : 38px";>&nbsp|</i><i class="fa fa-facebook "style="font-size : 38px";>&nbsp|</i><i class="fa fa-instagram "style="font-size:38px";>&nbsp|</i><i class="fa fa-youtube "style="font-size : 38px";>&nbsp|</i><i class="fa fa-google "style="font-size : 38px";>&nbsp|</i><i class="fa fa-linkedin "style="font-size : 38px";></i></p>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+  </div>
+  </body>
+  </html>

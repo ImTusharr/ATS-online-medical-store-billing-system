@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<Head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type=text/css>   
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serief';
+}
+.navbar{
+    position: absolute;
+    left: 0;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background:#000;
+
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.nav-link li{
+    margin: 0 30px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.dropdown_menu{
+    display: none;
+}
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.dropdown_menu ul{
+    display: block;
+    margin:10px;
+   
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    background:rgb(110, 110, 114);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top o.5s, opacity 0.5s ;
+  }
+  .nav-link li a:hover{
+    color : #fc036b;
+  }
+  .nav-link li:hover::after{
+    top: 50%;
+    opacity: 1
+  }
+  </style>   
+</Head>  
+<body>
+    <nav class="navbar">
+        <h1 class="logo">WHeroes</h1>
+        <ul class="nav-link">
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="adminlogin2.html">COMPLAINT</a></li>
+            <li><a href="#Many More">MANY MORE <i class = "fas fa-caret-down"></i> </a>
+                <div class="dropdown_menu">
+                    <ul class="nav-link">
+                        <li><a href="news&event.html">News & Events</a></li>
+                        <li><a href="publication.html">Publications</a></li>
+                        <li><a href="principles.html">Principles</a></li>
+                        <li><a href="acts&lows.html">Acts & Laws</a></li>
+                        <li><a href="Healthcare.html">Health Care</a></li>
+                    
+                    </ul>   
+                </div> 
+    </li>
+    </ul>
+    </nav>
+
+ </body>
+ <br>
+<html lang="en">
+
+  
+
+<head>
+
+    <style>
+ 
+
+        /* Styling the body */
+
+        body {
+            
+
+            margin: 100;
+
+            padding: 0;
+
+        }
+
+          
+
+        /* Styling section, giving background
+
+            image and dimensions */
+
+        section {
+
+            width: 100%;
+
+            height: 100vh;
+
+            
+            background-size: cover;
+
+        }
+
+        /* Styling the left floating section */
+
+        section .leftBox {
+
+            width: 50%;
+
+            height: 100%;
+
+            float: left;
+
+            padding: 50px;
+
+            box-sizing: border-box;
+
+        }
+
+          
+
+        /* Styling the background of 
+
+            left floating section */
+
+        section .leftBox .content {
+
+            color: #fff;
+
+            background: rgba(0, 0, 0, 0.5);
+
+            padding: 40px;
+
+            transition: .5s;
+
+        }
+
+          
+
+        /* Styling the hover effect  
+
+            of left floating section */
+
+        section .leftBox .content:hover {
+
+            background: #e91e63;
+
+        }
+
+          
+
+        /* Styling the header of left 
+
+            floating section */
+
+        section .leftBox .content h1 {
+
+            margin: 0;
+
+            padding: 0;
+
+            font-size: 50px;
+
+            text-transform: uppercase;
+
+        }
+
+          
+
+        /* Styling the paragraph of 
+
+            left floating section */
+
+        section .leftBox .content p {
+
+            margin: 10px 0 0;
+
+            padding: 0;
+
+        }
+
+          
+
+        /* Styling the three events section */
+
+        section .events {
+
+            position: relative;
+
+            width: 50%;
+
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.5);
+
+            float: right;
+
+            box-sizing: border-box;
+
+        }
+
+          
+
+        /* Styling the links of 
+
+        the events section */
+
+        section .events ul {
+
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            margin: 0;
+
+            padding: 40px;
+
+            box-sizing: border-box;
+
+        }
+
+          
+
+        /* Styling the lists of the event section */
+
+        section .events ul li {
+
+            list-style: none;
+
+            background: #fff;
+
+            box-sizing: border-box;
+
+            height: 200px;
+
+            margin: 15px 0;
+
+        }
+
+          
+
+        /* Styling the time class of events section */
+
+        section .events ul li .time {
+
+            position: relative;
+
+            padding: 20px;
+
+            background: #262626;
+
+            box-sizing: border-box;
+
+            width: 30%;
+
+            height: 100%;
+
+            float: left;
+
+            text-align: center;
+
+            transition: .5s;
+
+        }
+
+          
+
+        /* Styling the hover effect
+
+            of events section */
+
+        section .events ul li:hover .time {
+
+            background: #e91e63;
+
+        }
+
+          
+
+        /* Styling the header of time 
+
+            class of events section */
+
+        section .events ul li .time h2 {
+
+            position: absolute;
+
+            margin: 0;
+
+            padding: 0;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            color: #fff;
+
+            font-size: 60px;
+
+            line-height: 30px;
+
+        }
+
+          
+
+        /* Styling the texts of time 
+
+        class of events section */
+
+        section .events ul li .time h2 span {
+
+            font-size: 30px;
+
+        }
+
+          
+
+        /* Styling the details 
+
+        class of events section */
+
+        section .events ul li .details {
+
+            padding: 20px;
+
+            background: #fff;
+
+            box-sizing: border-box;
+
+            width: 70%;
+
+            height: 100%;
+
+            float: left;
+
+        }
+
+          
+
+        /* Styling the header of the 
+
+        details class of events section */
+
+        section .events ul li .details h3 {
+
+            position: relative;
+
+            margin: 0;
+
+            padding: 0;
+
+            font-size: 22px;
+
+        }
+
+          
+
+        /* Styling the lists of details 
+
+        class of events section */
+
+        section .events ul li .details p {
+
+            position: relative;
+
+            margin: 10px 0 0;
+
+            padding: 0;
+
+            font-size: 16px;
+
+        }
+
+          
+
+        /* Styling the links of details
+
+        class of events section */
+
+        section .events ul li .details a {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            padding: 10px 15px;  
+            border: 1.5px solid #262626;
+
+            margin-top: 8px;
+
+            font-size: 18px;
+
+            transition: .5s;
+
+        }
+
+          
+
+        /* Styling the details class's hover effect */
+
+        section .events ul li .details a:hover {
+
+            background: #e91e63;
+
+            color: #fff;
+
+            border-color: #e91e63;
+
+        }
+
+    </style>
+
+</head>
+
+    <section>
+
+        <div class="leftBox">
+
+            <div class="content">
+
+                <h1>
+
+                    Events and Shows
+
+                </h1>
+
+                 
+
+<p>
+
+                   Women’s Web is back with the much-awaited annual event Women #BreakingBarriers 2023-for women in business! The theme for this year is DigitALL – Coming together to Innovate! 
+
+​The ‘ALL’ in the DigitALL is around inclusion – it is about how digital can bring down barriers and enable more women to be part of innovation.
+
+This year, we will take Women Breaking Barriers to 9 Indian cities. In Phase 1, the event will be in 3 Indian cities – 22 April, 2023 in Bangalore; 29 April, 2023 in Mumbai; and 6 May, 2023  in Gurugram, where we come and put our collective experiences and wisdom together, and discuss how can we use the digital innovations and leverage it – to grow our business.
+
+                </p>
+<p>
+(17th March 2023,Friday, 4-6 PM, IST-Virtual Event)
+
+Our new masterclass series is on board! This virtual Lead Gen Engine Building masterclass is intended for women who run their own businesses and in generating quality leads on social media. If you you wondering how you can connect with your audience digitally you should be attending. It’s also a great fit for women who are part of other organizations, in Lead Generators building roles.
+
+Join the second session of the series Masterclass 2: Building An Effective Lead Gen Engine led by Chitra Singh, Founder- SalesWomentering.
+
+Do not miss this opportunity with a digital certificate, after the completion of the course. What are you waiting for?  Sign up for this virtual masterclass to upgrade your skill in generating leads & closing sales for achieving your professional goals! </p>
+
+ 
+
+            </div>
+
+        </div>
+
+  
+
+        <div class="events">
+
+            <ul>
+
+                <li>
+
+                    <div class="time">
+
+                        <h2>
+
+                            20 <br><span>Feb</span>
+
+                        </h2>
+
+                    </div>
+
+                    <div class="details">
+
+                        <h3>
+
+                            The game-changers of Indian lawn bowls
+
+                        </h3>
+
+                         
+
+<p> 
+
+                           In cricket-crazy India, the sport of lawn bowls had been under the radar - until four women came together to win gold at the 2022 Commonwealth Games.
+
+
+
+                        </p>
+ 
+
+  
+
+                        <a href="https://news.un.org/en/news/topic/women">View Details</a>
+
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                </li>
+
+  
+
+                <li>
+
+                    <div class="time">
+
+                        <h2>
+
+                            30 <br><span>March</span>
+
+                        </h2>
+
+                    </div>
+
+                    <div class="details">
+
+                        <h3>
+
+                            How technology is steering the wheel of healthcare for women in rural India
+
+                        </h3>
+
+                         
+
+<p>
+
+                           Healthcare infrastructure in rural regions of India has been found to be severely lacking when compared to their urban counterparts.
+
+                        </p>
+ 
+
+                        <a href="https://news.un.org/en/news/topic/women">View Details</a>
+
+                    </div>
+
+                    <div style="clear:both;"></div>
+
+                </li>
+
+  
+
+                <li>
+
+                    <div class="time">
+
+                        <h2>
+
+                            27 <br><span>March</span>
+
+                        </h2>
+
+                    </div>
+
+                    <div class="details">
+
+                        <h3>
+
+                            Women’s cricket has finally arrived in India in its full glory!
+
+                        </h3>
+
+                         
+
+<p>
+
+                           The Women’s Premier League promised much. It delivered more!
+
+The inaugural edition of the WPL, which concluded at the Brabourne Stadium here on Sunday. 
+                       </p>
+ 
+
+  
+
+                        <a href="https://news.un.org/en/news/topic/women">View Details</a>
+
+                    </div>
+
+                    <div style="clear:both;"></div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+</body>
+</br>
+  
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>TASK 2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ * {
+ box-sizing: border-box;
+ ;
+
+ }
+
+ .aside2 {
+ width: 48%;
+ height: 30vh;
+ padding-right: 15px;
+ margin-left: 15px;
+ float: left;
+ 
+ }
+.demo {
+   filter: brightness(120%);
+   filter: contrast(120%);
+   filter: drop-shadow(10px 10px 10px black);
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+}
+
+	
+	
+* {
+  box-sizing: border-box;
+}
+
+.footer-information {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 120%;
+   height:30%;
+   background-color: black;
+   color: white;
+}
+
+.footer-element {
+  float: left;
+  width: auto;
+  padding: 10px;
+  height: 200px;
+
+}
+.footer-elements:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ </style>
+</head>
+
+ 
+
+<body>
+    <div class="footer-information">
+        <div class="footer-elements">
+          <div class="footer-element" style="padding-left: 30px;">
+            <h3>WHeroes  </h3>
+          <br>
+          <p class="footer-links">
+          <a href="#">Home</a> | <a href="#">About us</a>|<a href="#">Contact us</a>
+          </p>
+          <br>
+          <p>
+          ©Dr.Panjabrao Deshmukh Polytechnic, Amravati 
+          </p>
+        </div>
+          <div class="footer-element">
+          <p><h3><u><i class="fa fa-map-marker fa-spin"></i> &nbsp : &nbsp Shivaji Nagar, Amravati, Maharashtra 444603 </p></h3></u>
+          <p><h3><u><i class="fa fa-phone fa-spin"></i> :&nbsp 103, 1091 </p></h3></u>
+          <p><h3><u><i class="fa fa-envelope fa-spin"></i> &nbsp support :&nbsp 
+          <a href="mailto:Wempowerment03@gmail.com">support@womenempowerment.com</a></p></h3></u>
+          <p><i class="fa fa-twitter" style="font-size : 38px";>&nbsp|</i><i class="fa fa-facebook "style="font-size : 38px";>&nbsp|</i><i class="fa fa-instagram "style="font-size:38px";>&nbsp|</i><i class="fa fa-youtube "style="font-size : 38px";>&nbsp|</i><i class="fa fa-google "style="font-size : 38px";>&nbsp|</i><i class="fa fa-linkedin "style="font-size : 38px";></i></p>
+          </div>
+        </div>
+        </div>
+        </div>
+      
+      </div>
+      </body>
+      </html>

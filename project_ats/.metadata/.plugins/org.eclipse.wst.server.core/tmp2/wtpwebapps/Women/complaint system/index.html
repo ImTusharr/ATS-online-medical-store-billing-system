@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serief';
+}
+.navbar{
+    position: absolute;
+    left: 0;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.nav-link li{
+    margin: 0 30px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.dropdown_menu{
+    display: none;
+}
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.dropdown_menu ul{
+    display: block;
+    margin:10px;
+   
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    background:rgb(110, 110, 114);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top o.5s, opacity 0.5s ;
+  }
+  .nav-link li a:hover{
+    color : #fc036b;
+  }
+  .nav-link li:hover::after{
+    top: 50%;
+    opacity: 1
+  }
+header {
+width: 100%;
+height: 100vh;
+background-image: url("https://www.gatesfoundation.org/equal-is-greater/static/about-0a239d030815a32c78da793f86670a8f.png");
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: flex-end;
+justify-content: center;  
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 450px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    margin-top: 13px;
+    margin-bottom: 30px;
+    color: #fff;
+    border-width: none;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: 2px solid white;
+    margin-top: 13px;
+    color:black;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+.btn:focus{
+    outline: none;
+
+}
+.srch:focus{
+    outline: none;
+
+}
+
+.Header_content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.Header_content h2{
+    font-size: 4vmin;
+
+}
+.line {
+    width :150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.Header_content h1{
+    font-size: 7vmin;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+.aside2 {
+    width: 48%;
+    height: 30vh;
+    padding-right: 15px;
+    margin-left: 15px;
+    float: left;
+    
+    }
+   .demo {
+      filter: brightness(120%);
+      filter: contrast(120%);
+      filter: drop-shadow(10px 10px 10px black);
+   }
+   .p1 {
+     font-family: "Times New Roman", Times, serif;
+   font-size: 30px;
+   }    
+       
+   * {
+     box-sizing: border-box;
+   }
+   
+   .footer-information {
+      position: bottom;
+      left: 0;
+      bottom: 0;
+      height:30%;
+      width: 100%;
+      background-color: black;
+      color: white;
+   }
+   
+   .footer-element {
+     float: left;
+     width: auto;
+     padding: 10px;
+     height: 200px;
+   
+   }
+   .footer-elements:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+</style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="web.css"/>
+<title>HOME PAGE</title>
+</head>
+ <body>
+  <nav class="navbar">
+    <h1 class="logo">WHeroes</h1>
+    <ul class="nav-link">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="http://127.0.0.1/complaint%20system/userlogin1.html">COMPLAINT</a></li>
+        <li><a href="#Many More">MANY MORE <i class = "fas fa-caret-down"></i> </a>
+            <div class="dropdown_menu">
+                <ul class="nav-link">
+                    <li><a href="news&event.html">News & Events</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="principles.html">Principles</a></li>
+                    <li><a href="acts&lows.html">Acts</a></li>
+                    <li><a href="Healthcare.html">Health Care</a></li>
+                
+                </ul>   
+            </div> 
+</li>
+</ul>
+</nav>
+ </body>
+    <header>
+        <div class="Header_content">
+            <div class="search">
+                <input class="srch"type="search" name="" placeholder="Type To Text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        <h2>We Believe in Women</h2>
+        <div class="line"></div>
+        <h2>Women Empowerment And Control Harrassment</h2>
+        </div>
+        </header>
+        <div class="footer-information">
+            <div class="footer-elements">
+              <div class="footer-element" style="padding-left: 30px;">
+                <h3>WHeroes  </h3>
+              <br>
+              <p class="footer-links">
+                <a href="homepage.html">Home</a> | <a href="aboutus.html">About us</a> 
+              </p>
+              <br>
+              <p>
+              ©Dr.Panjabrao Deshmukh Polytechnic, Amravati 
+              </p>
+            </div>
+              <div class="footer-element">
+              <p><h3><u><i class="fa fa-map-marker fa-spin"></i> &nbsp : &nbsp Shivaji Nagar, Amravati, Maharashtra 444603 </p></h3></u>
+              <p><h3><u><i class="fa fa-phone fa-spin"></i> :&nbsp 103, 1091 </p></h3></u>
+              <p><h3><u><i class="fa fa-envelope fa-spin"></i> &nbsp support :&nbsp 
+              <a href="mailto:Wempowerment03@gmail.com">support@womenempowerment.com</a></p></h3></u>
+              <p><i class="fa fa-twitter" style="font-size : 38px";>&nbsp|</i><i class="fa fa-facebook "style="font-size : 38px";>&nbsp|</i><i class="fa fa-instagram "style="font-size:38px";>&nbsp|</i><i class="fa fa-youtube "style="font-size : 38px";>&nbsp|</i><i class="fa fa-google "style="font-size : 38px";>&nbsp|</i><i class="fa fa-linkedin "style="font-size : 38px";></i></p>
+              </div>
+            </div>
+            </div>
+            </div>
+ </body>
+ </html>

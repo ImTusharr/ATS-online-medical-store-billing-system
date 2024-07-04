@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>success</title>
+<link rel="stylesheet" href="css/succ.css">
+</head>
+<body style="margin-top:30px ;">
+    <div>
+        <h2 class="display-4" style="color:green">Successful</h2>
+        <hr>
+        <p>Product Registration successful.</p>
+        <br>
+        <a href="addproduct.jsp">ADD Produts</a>
+        <br>
+         <a href="admin.jsp">Home</a>
+    </div>
+
+</body>
+</html>

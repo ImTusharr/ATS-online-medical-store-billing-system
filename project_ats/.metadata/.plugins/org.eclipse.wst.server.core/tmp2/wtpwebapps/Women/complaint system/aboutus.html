@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serief';
+}
+.navbar{
+    position: absolute;
+    left: 0;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.nav-link li{
+    margin: 0 30px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.dropdown_menu{
+    display: none;
+}
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.dropdown_menu ul{
+    display: block;
+    margin:10px;
+   
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    background:rgb(110, 110, 114);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top o.5s, opacity 0.5s ;
+  }
+  .nav-link li a:hover{
+    color : #fc036b;
+  }
+  .nav-link li:hover::after{
+    top: 50%;
+    opacity: 1
+  }
+				*{
+							margin :0;
+							padding:0;
+							box-sizing:border-box;
+				}
+				body {
+								background-color:black;
+				}
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  body{
+  font-family: Times new roman;
+  }
+  .main{
+  				margin-top:5%;
+  				
+  }
+  .Team{
+  width :auto;
+  background-color:grey;
+  margin:auto;
+  				display:flex;
+  			text-align : center;
+  				margin-bottom:100px;
+  				justify-content : center;
+  				flex-wrap:wrap;
+  }
+  .team_member
+  {
+  border-radius:20%;
+  margin:5px;
+  padding:5px;
+  line-height:20px;
+  background-color:black;
+  text-align : center;
+  				width:300px;
+  				height:240px;
+  				margin:30px;
+  				position:relative;
+  				text-align : center;
+  }
+  .team_member p{
+	color:whitesmoke;
+  }
+  .Image
+{
+top : -50px;
+   left:50%;
+   transform : translateY(-50%);
+background-color: black;
+border-radius:50%;
+margin: auto;
+display:block;
+Width:105px;
+height:105px;						
+}
+.Image img{
+
+   border-radius:50%;
+		width:100px;
+		height:100px;
+}
+.heading5{
+				font-size:20px;
+}
+.vission h3{
+		font-size:30px;		
+		color:whitesmoke;
+				
+}
+.vission p{
+	font-size:20px;		
+		color:whitesmoke;
+}
+.vission{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.vission .line {
+    width :500px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.About{
+	padding-top: 30px;
+	color:#fc036b;
+	text-align: center;
+}
+.footer-information {
+      position: bottom;
+      left: 0;
+      bottom: 0;
+      height:30%;
+      width: 100%;
+      background-color: black;
+      color: white;
+   }
+   
+   .footer-element {
+     float: left;
+     width: auto;
+     padding: 10px;
+     height: 200px;
+   
+   }
+   .footer-elements:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+</style>
+</head>
+<body>
+
+<div class="whole">
+	<div class="header">
+
+    <nav class="navbar">
+      <h1 class="logo">WHeroes</h1>
+      <ul class="nav-link">
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="adminlogin2.html">COMPLAINT</a></li>
+          <li><a href="#Many More">MANY MORE <i class = "fas fa-caret-down"></i> </a>
+              <div class="dropdown_menu">
+                  <ul class="nav-link">
+                      <li><a href="news&event.html">News & Events</a></li>
+                      <li><a href="publication.html">Publications</a></li>
+                      <li><a href="principles.html">Principles</a></li>
+                      <li><a href="acts&lows.html">Acts & Laws</a></li>
+                      <li><a href="Healthcare.html">Health Care</a></li>
+                  
+                  </ul>   
+              </div> 
+  </li>
+  </ul>
+  </nav>
+	</div>
+	<br>
+	<br>
+	<div class="About">
+<h1>About Us</h1>
+<br>
+<br>
+</div>
+<div class="vission">
+	<h3>Vision</h3>
+	<br>
+<p>Empowered women living with dignity and contributing as equal partners in development in an environment free from violence and discrimination. 
+   And, wellnurtured children with full opportunities for growth and development in a safe and protective environment.
+</p>
+<br>
+<div class="line"></div>
+<br>
+<h3>Mission</h3>
+<br>
+<p>Promoting social and economic empowerment of women through cross-cuting policies and programmes, mainstreaming gender concerns, creating awareness about their rights and facilitating institutional and legislative support for enabling them realize their human rights and develop to their full potential.</p>
+
+</div>
+<div class = "main">
+		<b><h3>Team Details</h3></b>
+		<br>
+		<br>
+				<div class="Team">
+						
+						<div class="team_member">
+										<div class ="Image">
+											<img src="Icon.jpg"alt="">			
+										</div>
+					<p>Pallavi Vighne</p>
+					<br>
+       <p>contact : </p><a href="tel:7414939812">7414939812</a>
+        
+        <p>Email :</p><a href="mailto:pallavivighne123@gmail.com">pallavivighne123@gmail.com</a>
+				</div>
+			
+				<div class="team_member">
+					<div class ="Image">
+						<img src="Icon.jpg"alt="">			
+					</div>
+<p>Tanvi Agarkar</p>
+<br>
+<p>contact : </p><a href="tel:7775916788">7775916788</a>
+
+<p>Email :</p><a href="mailto:tanviagarkar21@gmail.com">tanviagarkar21@gmail.com</a>
+</div>
+
+<div class="team_member">
+	<div class ="Image">
+		<img src="Icon.jpg"alt="">			
+	</div>
+<p>Purva Kale</p>
+<br>
+<p>contact : </p><a href="tel:8421848509">8421848509</a>
+
+<p>Email :</p><a href="mailto:purvakale1301@gmail.com">purvakale1301@gmail.com</a>
+</div>
+				
+
+			
+<div class="team_member">
+	<div class ="Image">
+		<img src="Icon.jpg"alt="">			
+	</div>
+<p>Shruti Lakhe</p>
+<br>
+<p>contact : </p><a href="tel: 83798 90855"> 83798 90855</a>
+
+<p>Email :</p><a href="mailto: slakhe46@gmail.com"> slakhe46@gmail.com</a>
+</div>
+			
+
+
+<div class="team_member">
+	<div class ="Image">
+		<img src="Icon.jpg"alt="">			
+	</div>
+<p>Saloni Chapke</p>
+<br>
+<p>contact : </p><a href="tel: 7841866404"> 7841866404</a>
+
+<p>Email :</p><a href="mailto:salonichapke004@gmail.com">salonichapke004@gmail.com</a>
+</div>
+
+			
+			
+</div>		
+
+</div>
+<div class="footer-information">
+  <div class="footer-elements">
+    <div class="footer-element" style="padding-left: 30px;">
+      <h3>WHeroes  </h3>
+    <br>
+    <p class="footer-links">
+      <a href="homepage.html">Home</a> | <a href="aboutus.html">About us</a> 
+    </p>
+    <br>
+    <p>
+    ©Dr.Panjabrao Deshmukh Polytechnic, Amravati 
+    </p>
+  </div>
+    <div class="footer-element">
+    <p><h3><u><i class="fa fa-map-marker fa-spin"></i> &nbsp : &nbsp Shivaji Nagar, Amravati, Maharashtra 444603 </p></h3></u>
+    <p><h3><u><i class="fa fa-phone fa-spin"></i> :&nbsp 103, 1091 </p></h3></u>
+    <p><h3><u><i class="fa fa-envelope fa-spin"></i> &nbsp support :&nbsp 
+    <a href="mailto:Wempowerment03@gmail.com">support@womenempowerment.com</a></p></h3></u>
+    <p><i class="fa fa-twitter" style="font-size : 38px";>&nbsp|</i><i class="fa fa-facebook "style="font-size : 38px";>&nbsp|</i><i class="fa fa-instagram "style="font-size:38px";>&nbsp|</i><i class="fa fa-youtube "style="font-size : 38px";>&nbsp|</i><i class="fa fa-google "style="font-size : 38px";>&nbsp|</i><i class="fa fa-linkedin "style="font-size : 38px";></i></p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+</div>
+</body>
+</html>

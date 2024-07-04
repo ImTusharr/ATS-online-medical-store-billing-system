@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" import="java.util.*" import ="javax.mail.*, javax.mail.internet.*" 
+    pageEncoding="ISO-8859-1"%>
+
+<%
+  String name = request.getParameter("name");
+  String phone = request.getParameter("phone");
+  String email = request.getParameter("email");
+  String city = request.getParameter("city");
+  String userMessage = request.getParameter("message");
+  
+  // Set the recipient email address
+  String recipient = "billingwithats@gmail.com";
+  
+  // Set the email subject and body
+  String subject = "Contact Us - " + name + " (" + city + ")";
+  String body = "Name: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\nCity: " + city + "\n\nMessage:\n" + userMessage;
+  
+  // Set the sender email credentials
+  String username = "billingwithats@gmail.com";
+  String password = "ats@12345";
+  
+  try {
+    // Create a Properties object to set the SMTP server properties
+    Properties props = new Properties();
+    props.put("mail.smtp.auth", "true");
+    props.put("mail.smtp.starttls.enable", "true");
+    props.put("mail.smtp.host", "smtp.gmail.com");
+    props.put("mail.smtp.port", "587");
+    
+    // Create a Session object and authenticate with the sender email credentials
+    Session session = Session.getInstance(props,
+      new javax.mail.Authenticator() {
+        protected PasswordAuthentication getPasswordAuthentication() {
+          return new PasswordAuthentication(username, password);
+        }
+      });
+    
+    // Create a Message object and set the recipient, subject, and body
+    Message emailMessage = new MimeMessage(session);
+    emailMessage.setFrom(new InternetAddress(username));
+    emailMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient));
+    emailMessage.setSubject(subject);
+    emailMessage.setText(body);
+    
+    // Send the message
+    Transport.send(emailMessage);
+    
+    // Redirect the user to a success page
+    response.sendRedirect("success.html");
+  } catch (MessagingException e) {
+    // Redirect the user to an error page if there's an error sending the email
+    response.sendRedirect("error.html");
+    throw new RuntimeException(e);
+  }
+%>
